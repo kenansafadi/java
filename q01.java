@@ -5,6 +5,7 @@ public static void main(String[] args) {
     Node second=new Node(21);
     Node third=new Node(4);
 
+    Node gg.setNext
     first.next=second;
     second.next=third;
 
