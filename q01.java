@@ -1,11 +1,9 @@
-
-
 class q01 {
 
 public static void main(String[] args) {
-    Node first=new Node(10);
-    Node second=new Node(20);
-    Node third=new Node(30);
+    Node first=new Node(7);
+    Node second=new Node(21);
+    Node third=new Node(4);
 
     first.next=second;
     second.next=third;
