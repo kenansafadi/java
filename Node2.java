@@ -2,14 +2,14 @@
 class Node2<T> {
 
     T data;
-    Node2 next;
+    Node2<T> next;
 
     Node2(T data) {
         this.data = data;
         this.next = null;
     }
 
-    public Node2<T> setNext(Node2 next) {
+    public Node2<T> setNext(Node2<T> next) {
         this.next = next;
         return next;
     }
