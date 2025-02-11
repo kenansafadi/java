@@ -1,10 +1,10 @@
 
-class Node {
+class Node<T> {
 
-    int data;
+    T data;
     Node next;
 
-    Node(int data) {
+    Node(T data) {
         this.data = data;
         this.next = null;
     }
@@ -15,7 +15,7 @@ class Node {
         return next;
     }
 
-    public int getData() {
+    public T getData() {
         return this.data;
     }
 
@@ -23,7 +23,7 @@ class Node {
         return this.next;
     }
 
-    public void setData(int data) {
+    public void setData(T data) {
         this.data = data;
     }
 }
