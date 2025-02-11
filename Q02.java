@@ -1,7 +1,7 @@
 
 class Q02 {
 
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
 
         Node2<Object> head = new Node2<>(30);  // Using Object as a generic type
         head.setNext(new Node2<>("Hello")) // Adding a String
@@ -10,6 +10,8 @@ class Q02 {
 
         Node2<Object> current = head;
         while (current != null) {
+            Node newnode = new Node(current.getData());
+            newnode.setNext(current.getNext());
             System.out.print(current.getData() + "~>");
             current = current.getNext();
             if (current == null) {
