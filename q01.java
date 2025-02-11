@@ -26,6 +26,7 @@ class Q01 {
             Node NewNode = new Node(i);
             current2.setNext(NewNode);
             current2 = NewNode;
+            
         }
         System.out.println("Linked List:" + n.getData() + " ~>");
         current2 = head;
