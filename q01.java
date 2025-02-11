@@ -36,7 +36,7 @@ class Q01 {
         // ----------------------------------------
         // Perek C {START}
         Node<String> head = new Node("My");
-        head.setNext(new Node<>("name")).setNext(new Node<>("is")).setNext(new Node<>("Moshe"));
+        head.setNext(new Node<String>("name")).setNext(new Node<String>("is")).setNext(new Node<String>("Moshe"));
         Node current = head;
         while (current != null) {
             System.out.println(current.getData() + " ~> ");
