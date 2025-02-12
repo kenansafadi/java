@@ -7,6 +7,6 @@ public class Q08 {
     public static void main(String[] args) {
         Node<Character> head = new Node<>('k');
         head.setNext(new Node<>('k')).setNext(new Node<>('k')).setNext(new Node<>('b')).setNext(new Node<>('b')).setNext(new Node<>('k')).setNext(new Node<>('z')).setNext(new Node<>('e')).setNext(new Node<>('e')).setNext(new Node<>('z'));
-        
+
     }
 }
