@@ -3,21 +3,16 @@ class Q02 {
 
     public static void main(String[] args) {
 
-        Node2<Object> head = new Node2<>(30);  // Using Object as a generic type
-        head.setNext(new Node2<>("Hello")) // Adding a String
-                .setNext(new Node2<>(5)) // Adding an Integer
-                .setNext(new Node2<>(4));         // Adding another Integer
+        Node<Object> head = new Node(30);
+        head.setNext(new Node<>("Hello")).setNext(new Node<>(5)).setNext(new Node<>(4));
 
-        Node2<Object> current = head;
+        Node<Object> current = head;
+
         while (current != null) {
-            Node newnode = new Node(current.getData());
-            newnode.setNext(current.getNext());
             System.out.print(current.getData() + "~>");
             current = current.getNext();
-            if (current == null) {
-
-                System.out.println("null");
-            }
         }
+        System.out.println("null");
+
     }
 }

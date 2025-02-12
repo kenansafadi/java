@@ -35,15 +35,17 @@ class Q01 {
         // Perek B {END}
         // ----------------------------------------
         // Perek C {START}
-        Node<String> head = new Node("My");
-        head.setNext(new Node<String>("name")).setNext(new Node<String>("is")).setNext(new Node<String>("Moshe"));
-        Node current = head;
+        Node<String> head = new Node<>("my");
+        head.setNext(new Node<>("name")).setNext(new Node<>("is")).setNext(new Node<>("Moshe"));
+        Node<String> current = head;
         while (current != null) {
-            System.out.println(current.getData() + " ~> ");
-            if (current == null) {
+            System.out.print(current.getData() + "~>");
+            current = current.getNext();
+            if (current == null)
                 System.out.println("null");
-            }
         }
-    } // main 
 
-} //  Q01 class
+    }
+} // main
+
+//  Q01 class
