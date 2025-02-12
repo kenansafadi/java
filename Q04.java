@@ -10,10 +10,10 @@ public class Q04 {
         while (current != null) {
         Node<Integer> NewNode = head.setNext(new Node<>(random.nextInt(99) + 1));
             current.setNext(NewNode);
-            current = NewNode;
+
 
             if (0 <= numNodes && numNodes <= 100) {
-                System.out.print("New Traverse Linked List Data: " + NewNode.getData() + "\nActual Data: \t" + current.getData() + "~>");
+                System.out.print("New Traverse Linked List Data: " + NewNode.getData() + " ~>");
                 return NewNode.getNext();
             } else {
                 throw new IllegalStateException("Invalid Number of Node Number: " + current.getData());
@@ -26,6 +26,6 @@ public class Q04 {
 
     public static void main(String[] args) {
         Q04 q04 = new Q04();
-        Node<Integer> randomChain = q04.createRandomChain(100);
+        Node<Integer> randomChain = q04.createRandomChain(0);
     }
 }
