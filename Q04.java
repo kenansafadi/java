@@ -8,13 +8,13 @@ public class Q04 {
         head.setNext(new Node<>(random.nextInt(99) + 1));
         Node<Integer> current = head;
         while (current != null) {
-            Node<Integer> NewNode = head;
+        Node<Integer> NewNode = head.setNext(new Node<>(random.nextInt(99) + 1));
             current.setNext(NewNode);
             current = NewNode;
 
             if (0 <= numNodes && numNodes <= 100) {
-                System.out.print("New Traverse Linked List Data" + NewNode.getData() + "Actual Data: \t" + current.getData() + "~>");
-                return current;
+                System.out.print("New Traverse Linked List Data: " + NewNode.getData() + "\nActual Data: \t" + current.getData() + "~>");
+                return NewNode.getNext();
             } else {
                 throw new IllegalStateException("Invalid Number of Node Number: " + current.getData());
             }
