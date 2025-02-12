@@ -6,22 +6,18 @@ public class Q05 {
     }
 
     public static void main(String[] args) {
-        Node<Integer> head1 = new Node<>(1);
+        Node<Integer> head1 = new Node<>(0);
+        head1.setNext(new Node<>(10)).setNext(new Node<>(20)).setNext(new Node<>(30)).setNext(new Node<>(40)).setNext(new Node<>(50));
+
         Node<Integer> current1 = head1;
-        for (int i = 2; i <= 10; i++) {
-            current1.setNext(new Node<>(i));
-            current1 = current1.getNext();
-            System.out.print("Chain{1}:\t" + current1.getData() + " -> ");
-        }
-        Node<Integer> head2 = new Node<>(11);
+
+        Node<Integer> head2 = new Node<>(55);
+        head2.setNext(new Node<>(500)).setNext(new Node<>(600)).setNext(new Node<>(700)).setNext(new Node<>(800)).setNext(new Node<>(900));
         Node<Integer> current2 = head2;
-        for (int i = 12; i <= 20; i++) {
-            current2.setNext(new Node<>(i));
-            current2 = current2.getNext();
-            System.out.println("Chain{2}:\t" + current2.getData() + " -> ");
-        }
+
         change(head1, head2);
         Node<Integer> current = head1;
+
         while (current != null) {
             System.out.print(current.getData() + " -> ");
             current = current.getNext();
