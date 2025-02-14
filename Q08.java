@@ -12,6 +12,7 @@ public class Q08 {
                 current = current.getNext();
                 System.out.print("compressed " + current.getData() + "~>");
             }
+
             current = current.getNext();
         }
 
