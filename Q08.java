@@ -7,7 +7,7 @@ public class Q08 {
         Node<Character> current = head;
 
         while (current.getNext() != null) {
-            if (!(current.getData().equals(current.getNext().getData())) || current.data.equals(current.getNext().getNext().getData()) || !(current.data.equals(current.getNext().getNext().getData()))) {
+            if (!(current.getData().equals(current.getNext().getData()))) {
 
                 System.out.print("compressing " + current.getData() + "~>\n");
                 current = current.getNext();

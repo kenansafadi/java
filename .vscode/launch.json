@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Q08",
+            "request": "launch",
+            "mainClass": "Q08",
+            "projectName": "java_594f9378"
+        },
+        {
             "type": "java+",
             "request": "launch",
             "name": "Launch Java App"
