@@ -1,20 +1,23 @@
+
+
 //Node ,Generic type
 public class Q08 {
     public static void compressSequences(Node<Character> chain) {
         Node<Character> head = chain;
         Node<Character> current = head;
-        current = current.getNext();
-        while (current.getNext() != null) {
-            if (current.getData() == current.getNext().getData()) {
-                Node<Character> newNode = current;
-                newNode.setData(head.getData());
-                current = newNode;
-                current = current.getNext();
-                System.out.print("compressed " + current.getData() + "~>");
-            }
 
+        while (current.getNext() != null) {
+            if (!(current.getData().equals(current.getNext().getData())) || current.data.equals(current.getNext().getNext().getData()) || !(current.data.equals(current.getNext().getNext().getData()))) {
+
+                System.out.print("compressing " + current.getData() + "~>\n");
+                current = current.getNext();
+            }
             current = current.getNext();
         }
+        if (current.getData() == null) {
+            throw new NullPointerException("Chain is empty");
+        }
+        current = current.getNext();
 
     }
 
