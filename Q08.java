@@ -24,7 +24,15 @@ public class Q08 {
         head.setNext(new Node<>('k')).setNext(new Node<>('k')).setNext(new Node<>('b')).setNext(new Node<>('b')).setNext(new Node<>('k')).setNext(new Node<>('z')).setNext(new Node<>('e')).setNext(new Node<>('e')).setNext(new Node<>('z'));
 
         compressSequences(head);
-
+/*
+ * <START>
+ * Explain what the program does:
+ *  The program compresses the sequences of the same character in a linked list.
+ * The program uses a while loop to iterate through the linked list and compares the current node with the next node.
+ * If the current node's data is not equal to the next node's data, a new node is created and the current node's data is assigned to the new node's data.
+ * The current node is then moved to the next node.
+ * <END>
+ */
 
     }
 }
