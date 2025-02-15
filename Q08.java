@@ -4,20 +4,18 @@
 public class Q08 {
     public static void compressSequences(Node<Character> chain) {
         Node<Character> head = chain;
+        
         Node<Character> current = head;
-
         while (current.getNext() != null) {
+            Node<Character> newNode = head;
             if (!(current.getData().equals(current.getNext().getData()))) {
-
-                System.out.print("compressing " + current.getData() + "~>\n");
-                current = current.getNext();
+                newNode.setData(current.getData());
+                System.out.print("compressing " + newNode.getData() + "~>\n");
             }
             current = current.getNext();
         }
-        if (current.getData() == null) {
-            throw new NullPointerException("Chain is empty");
-        }
-        current = current.getNext();
+        
+        
 
     }
 
