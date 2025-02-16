@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mahat2021_A_A_Q01",
+            "request": "launch",
+            "mainClass": "Mahat2021_A_A_Q01",
+            "projectName": "java_594f9378"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "MahatExams.main",
