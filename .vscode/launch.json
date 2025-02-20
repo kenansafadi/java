@@ -9,6 +9,13 @@
             "name": "Q",
             "request": "launch",
             "mainClass": "Exam_Questions.Q",
+            "projectName": "java_e1a3928e"
+        },
+        {
+            "type": "java",
+            "name": "Q",
+            "request": "launch",
+            "mainClass": "Exam_Questions.Q",
             "projectName": "java_594f9378"
         },
         {
